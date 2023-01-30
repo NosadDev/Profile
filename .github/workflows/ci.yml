@@ -33,10 +33,9 @@ jobs:
          tags: |
            ${{ secrets.REGISTRY_URL }}/${{ secrets.REGISTRY_USERNAME }}/${{ secrets.IMAGE_NAME }}:latest
            ${{ secrets.REGISTRY_URL }}/${{ secrets.REGISTRY_USERNAME }}/${{ secrets.IMAGE_NAME }}:${{ github.sha }}
- deploy-dev:
-   environment: development
+ deploy:
    needs: [build]
-   name: Deploy-dev
+   name: Deploy
    runs-on: self-hosted
    steps:
      - name: Set Kubernetes context
