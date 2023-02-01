@@ -1,2 +1,2 @@
 # NosadDev | Profile
-Active at: https://profile.nosad.dev
+Active at: (https://profile.nosad.dev){target="_blank"}
