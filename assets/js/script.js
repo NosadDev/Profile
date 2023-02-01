@@ -1,4 +1,4 @@
-const aos_container = document.querySelectorAll('.section-header,.section-body');
+const aos_container = document.querySelectorAll('.section-header,.section-body .card');
 const wrapper = document.querySelector('div[name="information"]');
 for (let i = 0; i < aos_container.length; i++) {
     checkActive(i)
