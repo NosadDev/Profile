@@ -7,90 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NosadDev | Profile </title>
     <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    <style>
-        body {
-            background: #606973;
-            height: 100vh;
-            /* background: #f4f6f9; */
-        }
-
-        section[name="content"] div[name="information"]>.row {
-            max-height: 91vh;
-            overflow-y: auto;
-        }
-
-        .carousel-control-next,
-        .carousel-control-prev {
-            width: 5%;
-        }
-
-        #education-history div[name="image-cosmetic"] {
-            background-image: url('/assets/images/svg/education.svg');
-        }
-
-        #work-history div[name="image-cosmetic"] {
-            background-image: url('/assets/images/svg/work-history.svg');
-            animation-delay: 1s;
-        }
-
-        #skills div[name="image-cosmetic"] {
-            background-image: url('/assets/images/svg/skills.svg');
-            animation-delay: 2s;
-        }
-
-        #knowledge div[name="image-cosmetic"] {
-            background-image: url('/assets/images/svg/knowledge.svg');
-            animation-delay: 3s;
-        }
-
-        #little-experience div[name="image-cosmetic"] {
-            background-image: url('/assets/images/svg/little-experience.svg');
-            animation-delay: 4s;
-        }
-
-        #portfolio div[name="image-cosmetic"] {
-            background-image: url('/assets/images/svg/portfolio.svg');
-            animation-delay: 5s;
-        }
-
-        div[name="image-cosmetic"] {
-            background-repeat: no-repeat;
-            background-position: right;
-            height: 10em;
-            animation: animate-image-cosmetic 5s infinite;
-            background-size: 20% 100%;
-        }
-
-        @keyframes animate-image-cosmetic {
-            0% {
-                width: 100%;
-            }
-
-            50% {
-                width: 95%;
-            }
-
-            100% {
-                width: 100%;
-            }
-        }
-
-        @media screen and (max-width: 767px) {
-            section[name="content"] div[name="information"]>.row {
-                margin-top: 1em;
-                max-height: 82vh;
-                overflow-y: auto;
-            }
-
-            div[name="image-cosmetic"] {
-                background-size: 40% 100%;
-            }
-            /* div[name="navigation"].collapse + div[name="information"]>.row {
-                max-height: 85vh;
-            } */
-        }
-    </style>
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body>
@@ -119,9 +36,15 @@
         <div name="information" class="col-md-10 p-1">
             <div class="row m-1 bg-white border rounded shadow p-2" data-bs-spy="scroll" data-bs-target="#sidebar-navigation" data-bs-smooth-scroll="true">
                 <div id="education-history" class="col-md-12 p-2 pb-0">
-                    <h3>EDUCATION HISTORY</h3>
-                    <hr class="mt-0">
-                    <div class="row m-0">
+                    <div class="row section-header">
+                        <div class="col-md-8">
+                            <h1>EDUCATION HISTORY</h1>
+                        </div>
+                        <div class="col-md-4">
+                            <img class="image-cosmetic" src="/assets/images/svg/education.svg" alt="Education History">
+                        </div>
+                    </div>
+                    <div class="row section-body">
                         <div class="col-md-12 col-lg-6 col-xl-4 px-1">
                             <div class="card mb-2">
                                 <div class="card-header px-2">
@@ -136,13 +59,19 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-12" name="image-cosmetic"></div>
                     </div>
+                    <hr>
                 </div>
                 <div id="work-history" class="col-md-12 p-2">
-                    <h3>WORK HISTORY</h3>
-                    <hr class="mt-0">
-                    <div class="row m-0 align-items-stretch">
+                    <div class="row section-header">
+                        <div class="col-md-8">
+                            <h1>WORK HISTORY</h1>
+                        </div>
+                        <div class="col-md-4">
+                            <img class="image-cosmetic" src="/assets/images/svg/work-history.svg" alt="Work History">
+                        </div>
+                    </div>
+                    <div class="row section-body">
                         <div class="col-md-12 col-lg-6 col-xl-4 px-1 mb-2">
                             <div class="card h-100 mb-2">
                                 <div class="card-header px-2">
@@ -200,10 +129,17 @@
                         </div>
                         <div class="col-md-12" name="image-cosmetic"></div>
                     </div>
+                    <hr>
                 </div>
                 <div id="skills" class="col-md-12 p-2 pb-0">
-                    <h3>Skills</h3>
-                    <hr class="mt-0">
+                    <div class="row section-header">
+                        <div class="col-md-8">
+                            <h1>Skills</h1>
+                        </div>
+                        <div class="col-md-4">
+                            <img class="image-cosmetic" src="/assets/images/svg/skills.svg" alt="Skills">
+                        </div>
+                    </div>
                     <div class="row m-0 align-items-stretch">
                         <div class="col-md-6 col-xl-3 col-xxl-2 px-1 mb-2">
                             <div class="card h-100 mb-2">
@@ -341,11 +277,18 @@
                         </div>
                         <div class="col-md-12" name="image-cosmetic"></div>
                     </div>
+                    <hr>
                 </div>
                 <div id="knowledge" class="col-md-12 p-2 pb-0">
-                    <h3>Knowledge</h3>
-                    <hr class="mt-0">
-                    <div class="row m-0 align-items-stretch">
+                    <div class="row section-header">
+                        <div class="col-md-8">
+                            <h1>Knowledge</h1>
+                        </div>
+                        <div class="col-md-4">
+                            <img class="image-cosmetic" src="/assets/images/svg/knowledge.svg" alt="Knowledge">
+                        </div>
+                    </div>
+                    <div class="row section-body">
                         <div class="col-md-12 col-xl-6 col-xxl-4 px-1 mb-2">
                             <div class="card h-100 mb-2">
                                 <div class="card-header px-2">
@@ -506,12 +449,18 @@
                         </div>
                         <div class="col-md-12" name="image-cosmetic"></div>
                     </div>
-                    <hr class="mb-0">
+                    <hr>
                 </div>
                 <div id="little-experience" class="col-md-12 p-2 pb-0">
-                    <h3>Little experience</h3>
-                    <hr class="mt-0">
-                    <div class="row m-0 align-items-stretch">
+                    <div class="row section-header">
+                        <div class="col-md-8">
+                            <h1>Little experience</h1>
+                        </div>
+                        <div class="col-md-4">
+                            <img class="image-cosmetic" src="/assets/images/svg/little-experience.svg" alt="Little Experience">
+                        </div>
+                    </div>
+                    <div class="row section-body">
                         <div class="col-md-6 col-xl-3 col-xxl-2 px-1 mb-2">
                             <div class="card h-100 mb-2">
                                 <div class="card-header px-2">
@@ -542,11 +491,18 @@
                         </div>
                         <div class="col-md-12" name="image-cosmetic"></div>
                     </div>
+                    <hr>
                 </div>
                 <div id="portfolio" class="col-md-12 p-2 pb-0">
-                    <h3>Portfolio</h3>
-                    <hr class="mt-0">
-                    <div class="row m-0 align-items-stretch">
+                    <div class="row section-header">
+                        <div class="col-md-8">
+                            <h1>Portfolio</h1>
+                        </div>
+                        <div class="col-md-4">
+                            <img class="image-cosmetic" src="/assets/images/svg/portfolio.svg" alt="Portfolio">
+                        </div>
+                    </div>
+                    <div class="row section-body">
                         <div class="col-md-12 p-0 mb-2">
                             <div class="card h-100 mb-2">
                                 <div class="card-header px-2">
@@ -688,10 +644,13 @@
                         </div>
                         <div class="col-md-12" name="image-cosmetic"></div>
                     </div>
+                    <hr>
                 </div>
             </div>
         </div>
     </section>
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="/assets/js/script.js"></script>
 </body>
 
 </html>
