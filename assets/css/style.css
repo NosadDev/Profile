@@ -57,6 +57,13 @@ section[name="content"] div[name="information"]>.row {
     justify-content: center;
     align-items: stretch;
     margin: 0;
+    transition: transform 0.5s;
+    transform: scale(0);
+}
+
+.row.section-body.active {
+    transition-delay: 0.25s;
+    transform: scale(1);
 }
 
 img.image-cosmetic {
