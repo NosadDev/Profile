@@ -16,7 +16,7 @@
         }
 
         section[name="content"] div[name="information"]>.row {
-            max-height: 90vh;
+            max-height: 91vh;
             overflow-y: auto;
         }
 
@@ -79,13 +79,16 @@
         @media screen and (max-width: 767px) {
             section[name="content"] div[name="information"]>.row {
                 margin-top: 1em;
-                max-height: 53vh;
+                max-height: 82vh;
                 overflow-y: auto;
             }
 
             div[name="image-cosmetic"] {
                 background-size: 40% 100%;
             }
+            /* div[name="navigation"].collapse + div[name="information"]>.row {
+                max-height: 85vh;
+            } */
         }
     </style>
 </head>
@@ -102,7 +105,7 @@
     </nav>
     <section name="content" class="row m-0">
         <div name="navigation" class="order-last col-md-2 p-1">
-            <nav id="sidebar-navigation" class="m-1 p-2 bg-white border rounded shadow">
+            <nav id="sidebar-navigation" class="d-none d-md-block m-1 p-2 bg-white border rounded shadow">
                 <nav class="nav nav-pills flex-column">
                     <a class="nav-link p-1 mb-1" href="#education-history">EDUCATION HISTORY</a>
                     <a class="nav-link p-1 mb-1" href="#work-history">WORK HISTORY</a>
@@ -151,8 +154,9 @@
                                     <p class="m-0">Job Description</p>
                                     <ul class="m-0">
                                         <li>Create API via NestJS</li>
-                                        <li>Setup Server for Development or Production</li>
                                         <li>Research and Development</li>
+                                        <li>Setup Server for Test,UAT,Production</li>
+                                        <li>Deploy to Test,UAT,Production environment</li>
                                     </ul>
                                 </div>
                             </div>
@@ -188,8 +192,8 @@
                                         <li>Requirement analysis</li>
                                         <li>Database design</li>
                                         <li>Development and testing</li>
-                                        <li>Setup server for project via VestaCP or Nginx</li>
-                                        <li>Deploy to Production environment</li>
+                                        <li>Setup Server for Test,UAT,Production</li>
+                                        <li>Deploy to Test,UAT,Production environment</li>
                                     </ul>
                                 </div>
                             </div>
