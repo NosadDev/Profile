@@ -12,7 +12,7 @@ section[name="content"] div[name="information"]>.row {
 
 .carousel-control-next,
 .carousel-control-prev {
-    width: 5%;
+    width: 3rem;
 }
 
 .row.section-header {
