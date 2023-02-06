@@ -77,7 +77,7 @@ img.image-cosmetic {
 @media screen and (max-width: 767px) {
     section[name="content"] div[name="information"]>.row {
         margin-top: 1em;
-        max-height: 82vh;
+        max-height: calc(100vh - 82px);
         overflow-y: auto;
     }
 
