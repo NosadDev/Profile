@@ -44,4 +44,4 @@ jobs:
          method: kubeconfig
          kubeconfig: ${{ secrets.KUBE_CONFIG }}
      - name: Trigger Restart and pull new image
-       run: kubectl rollout restart deployment deployment-lbboltgf --namespace=prod
+       run: kubectl rollout restart deployment github-nosaddev-profile-prod-deployment --namespace=prod
